@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞机大战</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="score-board">
+                <span>分数: <span id="score">0</span></span>
+            </div>
+            <div class="lives-board">
+                <span>生命: <span id="lives">❤❤❤</span></span>
+            </div>
+            <div class="high-score-board">
+                <span>最高分: <span id="highScore">0</span></span>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="start-screen" id="startScreen">
+            <h1>飞机大战</h1>
+            <button class="start-btn" id="startBtn">开始游戏</button>
+            <div class="controls-info">
+                <h3>操作说明:</h3>
+                <p>WASD 或 方向键 - 移动飞机</p>
+                <p>空格键 - 发射子弹</p>
+                <p>ESC - 暂停游戏</p>
+            </div>
+        </div>
+        <div class="pause-screen" id="pauseScreen">
+            <h2>游戏暂停</h2>
+            <button class="resume-btn" id="resumeBtn">继续游戏</button>
+        </div>
+        <div class="game-over-screen" id="gameOverScreen">
+            <h1>游戏结束</h1>
+            <p class="final-score">最终分数: <span id="finalScore">0</span></p>
+            <button class="restart-btn" id="restartBtn">重新开始</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
